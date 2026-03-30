@@ -20,7 +20,7 @@ A separate preprocessing script is also included for exploratory analysis and da
 
 The figure below illustrates the mechanistic model used to generate the simulated dataset for this scenario.
 
-![Mechanistic model](Result/MCM.png)
+![Mechanistic model](Results/MCM.png)
 
 Based on this model, both process variables and N2O emission data were generated for the machine learning analysis.
 
