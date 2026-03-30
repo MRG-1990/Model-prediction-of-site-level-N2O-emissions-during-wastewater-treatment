@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **mechanistic model** **(MCM)**.
+This procedure was implemented to both real dataset For more details, [click here](https://doi.org/10.1016/j.scitotenv.2015.06.122) and synthethic dataset from the mechanistic model For more details, [click here](https://github.com/wwtmodels/Benchmark-Simulation-Models). This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **mechanistic model** **(MCM)**. 
 
 Five regression algorithms are implemented in this project:
 
