@@ -1,7 +1,7 @@
 # Model-prediction-of-site-level-N2O-emissions-during-wastewater-treatment.
---
+
 ## Overview
---
+
 This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **mechanistic model** **(MCM)**.
 
 Five regression algorithms are implemented in this project:
@@ -13,9 +13,9 @@ Five regression algorithms are implemented in this project:
 - KNN
 A separate preprocessing script is also included for exploratory analysis and data preparation prior to model training.
 
---
+
 ## Scenario Description
---
+
 ## Mechanistic Model
 
 The figure below illustrates the mechanistic model used to generate the simulated dataset for this scenario.
@@ -28,9 +28,9 @@ In this scenario, N2O emissions were reported at **15-minute intervals**, result
 
 The target variable in this study is `G_N2O_r5`, which represents the **gas emissions from reactor 5**.
 
---
+
 ## Selected Variables
---
+
 In this scenario, **12 input features** were analyzed as the main variables potentially influencing **N2O emissions**.
 
 The selected input features are:
@@ -48,14 +48,14 @@ The selected input features are:
 - `Flow_inf`
 - `Tnload_inf`
 
---
+
 ## Preprocessing
---
+
 The preprocessing script is used for initial data exploration and preparation. It includes dataset inspection, visualization, distribution and correlation analysis, stationarity and lag checks, log transformation, and time-based splitting to support the modelling workflow.
 
---
+
 ## Modelling Workflow
---
+
 Each model follows a structured workflow that includes:
 
 1. Data preparation
@@ -76,9 +76,9 @@ Model performance is evaluated using:
 - R²
 - MAE
   
---
+
 ## Requirements
---
+
 Main Python libraries used in this project:
 
 - numpy
@@ -89,9 +89,9 @@ Main Python libraries used in this project:
 - statsmodels
 - xgboost
 
-  --
+
 ## Repository Structure
---
+
 ├── preprocessing/
 │   └── preprocessing_model.py
 ├── xgboost/
