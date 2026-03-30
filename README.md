@@ -2,7 +2,7 @@
 
 ## Overview
 
-This procedure was implemented to both **real dataset** for more details, [click here](https://doi.org/10.1016/j.scitotenv.2015.06.122) and synthethic dataset from the **mechanistic model** **(MCM)** for more details, [click here](https://github.com/wwtmodels/Benchmark-Simulation-Models). This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **(MCM)**. 
+This procedure was implemented to both **real dataset** for more details, [click here](https://doi.org/10.1016/j.scitotenv.2015.06.122) and synthethic dataset from the **mechanistic model** **(MCM)** for more details, [click here](https://github.com/wwtmodels/Benchmark-Simulation-Models). This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **MCM**. 
 
 Five regression algorithms are implemented in this project:
 
