@@ -1,8 +1,8 @@
-# Model-prediction-of-site-level-N2O-emissions-during-wastewater-treatment.
+# Model-prediction-of-site-level-N2O-emissions-during-wastewater-treatment
 
 ## Overview
 
-This procedure was implemented to both **real dataset** for more details, [click here](https://doi.org/10.1016/j.scitotenv.2015.06.122) and synthethic dataset from the **mechanistic model** **(MCM)** for more details, [click here](https://github.com/wwtmodels/Benchmark-Simulation-Models). This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **MCM**. 
+This repository contains machine learning workflows for predicting **N2O emissions** in **wastewater treatment plants (WWTPs)** using data generated from a **mechanistic model (MCM)**. The workflow was designed based on both a **real dataset** — for more details, [click here](https://doi.org/10.1016/j.scitotenv.2015.06.122) — and a **synthetic dataset** generated from the mechanistic model — for more details, [click here](https://github.com/wwtmodels/Benchmark-Simulation-Models).
 
 Five regression algorithms are implemented in this project:
 
@@ -11,23 +11,20 @@ Five regression algorithms are implemented in this project:
 - AdaBoost
 - SVR
 - KNN
-A separate preprocessing script is also included for exploratory analysis and data preparation prior to model training.
 
+A separate preprocessing script is also included for exploratory analysis and data preparation prior to model training.
 
 ## Scenario Description
 
-## Mechanistic Model
+## Mechanistic Model (MCM)
 
-The figure below illustrates the mechanistic model used to generate the simulated dataset for this scenario.
+The figure below illustrates the MCM used to generate the simulated dataset for this scenario.
 
 ![Mechanistic model](Results/MCM.png)
 
-Based on this model, both process variables and N2O emission data were generated for the machine learning analysis.
-
-In this scenario, N2O emissions were reported at **15-minute intervals**, resulting in **34,944 samples**. This sampling frequency was selected to remain practical and consistent with real operational conditions.
+Based on this model, both process variables and N2O emission data were generated for the machine learning analysis. In this scenario, N2O emissions were reported at **15-minute intervals**, resulting in **34,944 samples**. This sampling frequency was selected to remain practical and consistent with real operational conditions.
 
 The target variable in this study is `G_N2O_r5`, which represents the **gas emissions from reactor 5**.
-
 
 ## Selected Variables
 
@@ -48,13 +45,11 @@ The selected input features are:
 - `Flow_inf`
 - `Tnload_inf`
 
-
 ## Preprocessing
 
-The preprocessing script is used for initial data exploration and preparation. It includes dataset inspection, visualization, distribution and correlation analysis, stationarity and lag checks, log transformation, and time-based splitting to support the modelling workflow.
+The preprocessing script is used for initial data exploration and preparation. It includes dataset inspection, visualization, distribution and correlation analysis, stationarity and lag checks, log transformation, and time-based splitting to support the modeling workflow.
 
-
-## Modelling Workflow
+## Modeling Workflow
 
 Each model follows a structured workflow that includes:
 
@@ -68,6 +63,11 @@ Each model follows a structured workflow that includes:
 
 Some scripts may also include a hyperparameter optimization section for methodological completeness.
 
+## Results
+
+The `Results` folder contains the main output figures generated during the modelling workflows, including performance plots, learning curves, feature importance analysis, residual plots, and zero-bias regression plots for the implemented machine learning models.
+
+
 ## Evaluation Metrics
 
 Model performance is evaluated using:
@@ -76,6 +76,7 @@ Model performance is evaluated using:
 - R²
 - MAE
   
+
 
 ## Requirements
 
