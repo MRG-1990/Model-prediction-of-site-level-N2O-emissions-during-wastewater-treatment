@@ -107,6 +107,4 @@ Main Python libraries used in this project:
 ├── data/
 │   └── Scenario_1_Recorrect.csv
 └── README.md
-````markdown
-```text
-...structure...
+
